@@ -7,14 +7,16 @@ def bsearch(v,x):
     li=0
     ls=len(v)-1
     aux=0
+    cont=0
     while li<=ls:
+        cont+=1
         aux=(li+ls)//2
         if v[aux]<x:
             li = aux+1
         elif v[aux]>x:
             ls = aux-1
         else:
-            return aux   
+            return aux
     return -1       
         
 r = bsearch(vetor,int(input('valor a ser encontrado: ')))

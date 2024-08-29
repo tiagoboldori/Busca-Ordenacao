@@ -3,7 +3,7 @@
 #dado o vetor:
 vetor=[1,5,8,9,12]
 
-def Bsort(v,x):
+def bsort(v,x):
     li=0
     ls=len(v)-1
     aux=0
@@ -17,7 +17,7 @@ def Bsort(v,x):
             return aux   
     return -1       
         
-r = Bsort(vetor,int(input('valor a ser encontrado: ')))
+r = bsort(vetor,int(input('valor a ser encontrado: ')))
 if r != -1:
     print('valor no index:', r)
 else:
